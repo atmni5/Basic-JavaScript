@@ -1,0 +1,24 @@
+<!-- Assessment 3 part 2
+	 Aaron Tumini		-->
+<script type="text/javascript">
+function wage_calc()
+{
+hours = prompt("input your hours worked")
+pay = prompt("enter your hourly wage")
+total_pay = hours * pay
+gross = total_pay * 0.22
+total_gross = total_pay - gross
+alert("Gross pay: "+ total_pay + "\n" + "Tax deducted: " + gross + "\n" + "Final pay: " + total_gross)
+repeat = prompt("Would you like to enter another pay (yes/no)")
+if(repeat == "yes" || repeat == "y" || repeat == "YES" || repeat == "Y")
+	{
+		wage_calc()
+	}
+	else
+	{
+		
+	}
+}
+wage_calc()
+</script>
+

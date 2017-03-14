@@ -1,0 +1,48 @@
+<script type="text/javascript" language="javascript">
+	function unknowncheck()
+	{
+		var unknown = prompt("enter random number")
+		var unknown = Number(unknown)
+		count = 0
+		if(unknown > 100 || unknown < 1)
+		{
+			alert("enter a number between 1-100")
+			unknowncheck()
+		}
+		else if(unknown <= 100 && unknown >= 1)
+		{
+			function chance()
+			{
+				guess = prompt("enter guess")
+				guess = Number(guess)
+				count = count + 1
+				if(guess > unknown)
+				{
+					alert("your guess was too high")
+					chance()
+				}
+				else if(guess < unknown)
+				{
+					alert("your guess was too small")
+					chance()
+				}
+				else if(guess == unknown)
+				{
+					alert("you have won. \n it took you " + count + " turns.")
+				}
+			}
+		chance()
+		}
+		repeat = prompt("would you like to play again (y/n)")
+		if(repeat == "y" || repeat == "Y" || repeat == "yes" || repeat == "YES")
+		{
+			unknowncheck()
+		}
+		else
+		{
+				
+		}
+	}
+	unknowncheck()	
+</script>
+

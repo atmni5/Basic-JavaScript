@@ -1,0 +1,19 @@
+<!-- Assessment 3 task 4
+	 Aaron Tumini		 -->
+<script type="text/javascript">
+
+temp = prompt("enter temperature")
+temp = Number(temp)
+tunit = prompt("enter current unit of temperature")
+
+if(tunit == "c" || tunit == "C" || tunit == "celcius")
+{
+	result = ((temp / 5) * 9) + 32
+}
+else if(tunit == "f" || tunit == "F" || tunit == "farenheit")
+{
+	result = ((temp -32) * 5) / 9
+}
+alert(result)
+
+</script>
